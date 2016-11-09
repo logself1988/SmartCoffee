@@ -70,6 +70,7 @@
 *.i*86
 *.x86_64
 *.hex
+*.d51
 
 # Debug files
 *.dSYM/
@@ -78,4 +79,13 @@
 
 # C extensions
 *.so
+
+# others
+*.crf
+*.axf
+*.lnp
+*.plg
+*.sct
+*.tra
+*.htm
 

@@ -1,5 +1,0 @@
--c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\FWlib\inc -I..\Libraries\FWlib\src -I..\User -I..\BSP 
--I D:\Keil\ARM\RV31\INC 
--I D:\Keil\ARM\CMSIS\Include 
--I D:\Keil\ARM\Inc\ST\STM32F10x 
--DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\Output\bluetooth.o" --omf_browse "..\Output\bluetooth.crf" --depend "..\Output\bluetooth.d" "..\BSP\blueTooth.c"

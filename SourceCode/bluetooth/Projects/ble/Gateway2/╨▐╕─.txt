@@ -1,0 +1,15 @@
+peripheral.cÐèÒªÐÞ¸Ä
+
+/*********************************************************************
+ * @brief   Does the device initialization.
+ *
+ * Public function defined in peripheral.h.
+ */
+bStatus_t GAPRole_StartDevice( gapRolesCBs_t *pAppCallbacks )
+{
+#ifdef GHOSTYU_MSS
+  if ( gapRole_state == GAPROLE_INIT || 
+      (!gapRole_AdvEnabled && (gapRole_state == GAPROLE_WAITING || gapRole_state == GAPROLE_WAITING_AFTER_TIMEOUT ) ) )
+#else
+  if ( gapRole_state == GAPROLE_INIT )
+#endif
